@@ -1,0 +1,201 @@
+{
+  // Основные настройки редактора
+  "editor.tabSize": 2, // Установить размер табуляции в 2 пробела
+  "editor.insertSpaces": false, // Использовать табы вместо пробелов (false отключает пробелы)
+  "editor.detectIndentation": true, // Автоматически определять отступы в файле
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?", // Символы, разделяющие слова
+  "editor.smoothScrolling": true, // Плавная прокрутка редактора
+  "editor.minimap.enabled": false, // Отключить миникарту
+  "editor.folding": true, // Включить сворачивание кода
+  "editor.hideCursorInOverviewRuler": true, // Скрыть курсор в линейке обзора
+  "editor.glyphMargin": false, // Отключить боковую панель для значков
+  "editor.bracketPairColorization.enabled": false, // Отключить цветовое выделение парного соответствия скобок
+  "editor.unicodeHighlight.invisibleCharacters": false, // Не выделять невидимые символы Unicode
+  "editor.multiCursorModifier": "ctrlCmd", // Модификатор для множественных курсоров (Ctrl/Cmd)
+  "editor.gotoLocation.multipleDefinitions": "goto", // При переходе к определению сразу переходить к первому варианту
+  // Подсказки и автодополнение
+  "editor.inlineSuggest.enabled": true, // Включить встроенные подсказки
+  "editor.suggestSelection": "first", // Выбирать первый вариант в подсказках
+  "editor.snippetSuggestions": "inline", // Показывать сниппеты в строке автодополнения
+  "editor.tabCompletion": "on", // Разворачивать сниппеты по Tab
+  "editor.hover.sticky": true, // Зафиксировать всплывающие подсказки при наведении
+  // Автофикс и линтинг
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit", // Автофикс ESLint при сохранении
+    "source.fixAll.stylelint": "explicit", // Автофикс Stylelint при сохранении
+    "source.organizeImports": "never" // Не сортировать импорты автоматически
+  },
+  "editor.formatOnSave": false, // Отключить форматирование при сохранении (переложить на ESLint/Stylelint)
+  "prettier.enable": false, // Отключить встроенный Prettier, использовать ESLint
+  // ESLint настройки
+  "eslint.enable": true, // Включить ESLint
+  "eslint.quiet": true, // Скрывать неважные сообщения ESLint
+  "eslint.codeAction.showDocumentation": { // Показывать документацию для правил ESLint
+    "enable": true
+  },
+  "eslint.validate": [ // Языки, проверяемые ESLint
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "svelte",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
+  ],
+  "eslint.rules.customizations": [ // Настройка отображения и исправления правил ESLint
+    {
+      "rule": "style/*",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть стилистические предупреждения
+    {
+      "rule": "format/*",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила форматирования
+    {
+      "rule": "*-indent",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила отступов
+    {
+      "rule": "*-spacing",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила пробелов
+    {
+      "rule": "*-spaces",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила пробелов
+    {
+      "rule": "*-order",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила порядка
+    {
+      "rule": "*-dangle",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила висячих запятых
+    {
+      "rule": "*-newline",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила новых строк
+    {
+      "rule": "*quotes",
+      "severity": "off",
+      "fixable": true
+    }, // Скрыть правила кавычек
+    {
+      "rule": "*semi",
+      "severity": "off",
+      "fixable": true
+    } // Скрыть правила точек с запятой
+  ],
+  // Stylelint настройки
+  "stylelint.validate": [ // Языки, проверяемые Stylelint
+    "scss",
+    "vue"
+  ],
+  // Проверка орфографии
+  "cSpell.enabled": true, // Включить проверку орфографии
+  "cSpell.language": "en,ru", // Использовать английский и русский словари
+  // Настройки интерфейса
+  "workbench.iconTheme": "symbols", // Использовать тему иконок Symbols от Miguel Solorio
+  "workbench.colorTheme": "GitHub Dark Dimmed", // Использовать темную приглушенную тему GitHub
+  "workbench.startupEditor": "newUntitledFile", // Открывать новый файл при запуске
+  "workbench.editor.tabSizing": "shrink", // Сжимать вкладки редактора
+  "window.commandCenter": false, // Отключить командный центр в заголовке
+  "window.density.editorTabHeight": "compact", // Компактная высота вкладок редактора
+  // Прокрутка и навигация
+  "editor.stickyScroll.enabled": false, // Отключить липкую прокрутку в редакторе
+  "editor.stickyScroll.scrollWithEditor": false, // Отключить прокрутку с редактором
+  "workbench.tree.enableStickyScroll": false, // Отключить липкую прокрутку в дереве файлов
+  // Настройки проводника (Explorer)
+  "explorer.confirmDelete": false, // Не запрашивать подтверждение при удалении
+  "explorer.compactFolders": false, // Не сжимать вложенные папки
+  "explorer.confirmDragAndDrop": false, // Не запрашивать подтверждение при перетаскивании
+  // Исключения файлов
+  "files.exclude": { // Скрыть указанные файлы и папки из проводника
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.nuxt": true,
+    "**/_nuxt": true,
+    "**/node_modules": true
+  },
+  // Ассоциации редакторов
+  "workbench.editorAssociations": { // Установить редактор по умолчанию для SVG
+    "*.svg": "default"
+  },
+  // Git настройки
+  "git.enableSmartCommit": true, // Включить умные коммиты (без изменений — пропустить)
+  // Отладка (Debug)
+  "debug.toolBarLocation": "hidden", // Скрыть панель инструментов отладки
+  "debug.focusWindowOnBreak": false, // Не переключать фокус на окно при точке останова
+  "debug.showInlineBreakpointCandidates": false, // Не показывать подсказки точек останова в строке
+  "debug.showBreakpointsInOverviewRuler": false, // Не показывать точки останова в линейке обзора
+  // Хлебные крошки (Breadcrumbs)
+  "breadcrumbs.icons": false, // Отключить иконки в хлебных крошках
+  "breadcrumbs.symbolPath": "off", // Отключить путь символов
+  "breadcrumbs.showKeys": false, // Не показывать ключи
+  "breadcrumbs.showFiles": false, // Не показывать файлы
+  "breadcrumbs.showArrays": false, // Не показывать массивы
+  "breadcrumbs.showEvents": false, // Не показывать события
+  "breadcrumbs.showFields": false, // Не показывать поля
+  "breadcrumbs.showClasses": false, // Не показывать классы
+  "breadcrumbs.showMethods": false, // Не показывать методы
+  "breadcrumbs.showBooleans": false, // Не показывать булевы значения
+  "breadcrumbs.showFunctions": false, // Не показывать функции
+  "breadcrumbs.showConstants": false, // Не показывать константы
+  "breadcrumbs.showEnumMembers": false, // Не показывать члены перечислений
+  "breadcrumbs.showConstructors": false, // Не показывать конструкторы
+  // Терминал
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Установить Git Bash как терминал по умолчанию в Windows
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.component.ts": "$(capture).component.html, $(capture).component.spec.ts, $(capture).component.css, $(capture).component.scss, $(capture).component.sass, $(capture).component.less",
+    "*.css": "$(capture).css.map, $(capture).*.css",
+    "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
+    "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx",
+    "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+    "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
+    "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
+    ".env": "*.env, .env.*, .envrc, env.d.ts",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "dockerfile": ".dockerignore, docker-compose.*, dockerfile*",
+    "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "package.json": ".browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json, eslint*, firebase.json, grunt*, gulp*, jenkins*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, simple-git-hooks*, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, xo.config.*, yarn*",
+    "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
+    "shims.d.ts": "*.d.ts",
+    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
+  },
+  "cSpell.words": [
+    "sonner",
+    "unhead",
+    "unplugin",
+    "vuejs"
+  ],
+}

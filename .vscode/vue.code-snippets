@@ -1,0 +1,19 @@
+{
+  "Vue 3 Base Custom": {
+    "prefix": "vbase",
+    "body": [
+			"<script lang=\"ts\" setup>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>Hello World</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Custom Vue 3 component with TS and SCSS"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "recommendations": [
+    // Линтинг и форматирование
+    "dbaeumer.vscode-eslint", // Интеграция ESLint для проверки и исправления JS/TS/Vue
+    "stylelint.vscode-stylelint", // Интеграция Stylelint для CSS/SCSS, включая <style> в Vue
+    // "esbenp.prettier-vscode", // Prettier для форматирования кода (опционально)
+    "redhat.vscode-xml", // XML форматирование
+
+    // Поддержка Vue
+    "Vue.volar", // Официальная поддержка Vue 3: TypeScript, автодополнение, форматирование
+    "sdras.vue-vscode-snippets", // Расширенные сниппеты для Vue 2/3, Nuxt, Vuex
+
+    // SCSS и стили
+    "mrmlnc.vscode-scss", // Автодополнение и подсветка синтаксиса для SCSS
+    "kamikillerto.vscode-colorize", // Визуализация цветов (HEX, RGB, HSL) в коде
+    "anseki.vscode-color", // Интерактивный выбор цветов через палитру
+
+    // Утилиты для разработки
+    "antfu.goto-alias", // Улучшенная навигация к исходному коду через алиасы и автоимпорты
+    "editorconfig.editorconfig", // Поддержка .editorconfig для единообразия настроек
+    "eamodio.gitlens", // Продвинутые функции Git: история, авторство, сравнение
+    "usernamehw.errorlens", // Отображение ошибок и предупреждений прямо в коде
+    "streetsidesoftware.code-spell-checker", // Проверка орфографии в комментариях и строках
+    "streetsidesoftware.code-spell-checker-russian", // Словарь русского языка для проверки орфографии
+    "simonsiefke.svg-preview", // Предпросмотр SVG-файлов в редакторе
+
+    // Оптимизация и производительность
+    "wix.vscode-import-cost", // Показывает размер импортируемых модулей для оптимизации
+    "formulahendry.auto-rename-tag", // Автоматическое переименование парных тегов (HTML/Vue)
+    "pflannery.vscode-versionlens", // Отображение версий зависимостей в package.json
+    "cardinal90.multi-cursor-case-preserve", // Сохранение регистра при работе с множественными курсорами
+    "idleberg.backticks", // Автозамена кавычек на обратные для шаблонных строк
+
+    // Визуальные улучшения
+    "GitHub.github-vscode-theme", // Темы оформления в стиле GitHub (светлые и темные)
+    "miguelsolorio.symbols", // Минималистичная тема иконок для файлов и папок
+    "jzmstrjp.color-the-tag-name" // Цветная подсветка имен тегов в HTML/Vue/JSX
+  ]
+}
