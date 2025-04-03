@@ -1,0 +1,53 @@
+/* stylelint-disable scss/dollar-variable-pattern */
+/* stylelint-disable scss/no-global-function-names */
+@use 'sass:math';
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+/**
+ * Функция для расчета адаптивного размера шрифта
+ * @param {number} $f-min - Минимальный размер шрифта (например, 14px)
+ * @param {number} $f-max - Максимальный размер шрифта (например, 16px)
+ * @param {number} $w-min - Минимальная ширина viewport (например, 360px)
+ * @param {number} $w-max - Максимальная ширина viewport (например, 1900px)
+ * @param {string} $units - Единицы измерения (по умолчанию px)
+ * @return {string} - CSS calc() формула для плавного изменения размера
+ */
+@function calc-fluid-font-size($f-min, $f-max, $w-min, $w-max, $units: px) {
+  $f-min: strip-unit($f-min);
+  $f-max: strip-unit($f-max);
+  $w-min: strip-unit($w-min);
+  $w-max: strip-unit($w-max);
+  $k: math.div(($f-max - $f-min), ($w-max - $w-min));
+  $b: $f-min - $k * $w-min;
+  $b: $b + $units;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+
+/**
+ * Миксин для обработки hover-состояний с учетом устройств
+ * @content - Стили, применяемые при hover/active состоянии
+ */
+@mixin hover {
+  /* Для устройств с поддержкой hover (обычно десктопы) */
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  /* Для устройств без поддержки hover (обычно тач-устройства) */
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}

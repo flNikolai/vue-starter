@@ -1,0 +1,104 @@
+@media screen and (width >= 960px) {
+  html {
+    margin-right: calc(-1 * (100vw - 100%));
+    overflow-x: hidden;
+  }
+}
+
+::selection {
+  background: var(--vwa-c-accent);
+  color: var(--vwa-c-black);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.4;
+  text-size-adjust: 100%;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--vwa-c-bg);
+  color: var(--vwa-c-white);
+  direction: ltr;
+  display: flex;
+  font-family: var(--vwa-font-family-base);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: style;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  place-items: center;
+  text-rendering: optimizelegibility;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 16px;
+
+    @media (width <= 768px) {
+      width: 2px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--vwa-c-accent);
+    color: var(--vwa-c-white);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 4px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--vwa-c-accent);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  min-width: 100vw;
+
+  .app__wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .app__content {
+    width: 100%;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root),
+html.dark::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-old(root),
+html.dark::view-transition-new(root) {
+  z-index: 9999;
+}
+

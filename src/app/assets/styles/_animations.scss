@@ -1,0 +1,60 @@
+/* stylelint-disable selector-class-pattern */
+// Анимация перехода страниц
+.landing-enter-active,
+.landing-leave-active {
+  transition: all 0.8s ease;
+}
+
+.landing-enter-from {
+  opacity: 0;
+  transform: scale(0.95) rotate(-1deg);
+}
+
+.landing-leave-to {
+  opacity: 0;
+  transform: scale(1.05) rotate(1deg);
+}
+
+// Fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0 !important;
+}
+
+// плавное появление popup
+.fade-popup-enter-active {
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+.fade-popup-enter-from {
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+}
+
+.fade-popup-enter-to {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.fade-popup-leave-active {
+  transition:
+    opacity 0.2s ease-in,
+    transform 0.2s ease-in;
+}
+
+.fade-popup-leave-from {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.fade-popup-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}

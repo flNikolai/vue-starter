@@ -1,0 +1,26 @@
+@mixin new-font($family, $pathName, $weight: normal, $style: normal) {
+  @font-face {
+    font-display: swap;
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    src:
+      url('@/app/assets/fonts/#{$family}/#{$pathName}.woff2') format('woff2'),
+      url('@/app/assets/fonts/#{$family}/#{$pathName}.woff') format('woff');
+  }
+}
+
+@include new-font('Cinzel', 'Cinzel_regular', 400, normal);
+@include new-font('Cinzel', 'Cinzel_bold', 700, normal);
+@include new-font('OpenSans', 'OpenSans_Regular', 400, normal);
+@include new-font('OpenSans', 'OpenSans_Semibold', 600, normal);
+
+// 100 — тонкое начертание (thin, hairline); 1
+// 200 — сверх светлое (extra light, ultra light); 1
+// 300 — светлое (light); 1
+// 400 — нормальное (normal, regular, book); 1
+// 500 — среднее (medium); 1
+// 600 — полужирное (semi bold, demibold); 1
+// 700 — жирное (bold); 1
+// 800 — сверх жирное (extra bold, ultra bold); 1
+// 900 — тяжёлое (black, heavy)

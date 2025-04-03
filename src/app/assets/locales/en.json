@@ -1,0 +1,54 @@
+{
+  "header": {
+    "home": "Home",
+    "calendar": "Event Calendar",
+    "store": "Store",
+    "telegram": "Telegram",
+    "support": "Support"
+  },
+
+  "button": {
+    "play_now": "Play",
+    "play": "Play",
+    "to_battle": "To Battle",
+    "login": "Sign In",
+    "register": "Register",
+    "install": "Install Lineage 2 Essence"
+
+  },
+
+  "preview": {
+    "title": "Lineage 2 Essence",
+    "chronicles": "Guardians",
+    "subtitle": "You’re not alone!<br>The guardians will protect you",
+    "description": "This winter starts with awesome changes such as a new server and a global update, providing a lot of unique opportunities. Don’t waste a chance to start from scratch and be the first to reach the top. Go for it!"
+  },
+
+  "newServer": {
+    "title": "A world for new adventures",
+    "server_title": "New server:",
+    "description": "The new server, Mint, has opened its doors. Here you can feel the competitive spirit once again. Just think about what it’s been like to start your journey anew: the first raid, collections, bosses, weapons, allies... and your first victory. It’s time to rewrite your story!"
+  },
+
+  "newContent": {
+    "title": "New PvP system, new experience",
+    "description": "The PvP system will be&nbsp;reworked on&nbsp;all servers:<br>All bosses will have their own PvP zones with no&nbsp;penalties for dying there. Fight without fear of&nbsp;losing&nbsp;XP or&nbsp;L-Coins.<br>Some monsters will respawn faster.<br>You will get more valuable rewards for defeating bosses in&nbsp;special zones. Something to&nbsp;fight for, right?<br>Resurrection during the clan war will cost half as&nbsp;many L-Coins. So, don’t hesitate to&nbsp;challenge enemy guilds!"
+  },
+
+  "footer": {
+    "title": "Start playing<br>for free",
+    "description": "Join the community",
+    "tg": "The fastest news",
+    "tg_name": "Telegram",
+    "tg_bot": "Get notifications about trading deals and even character deaths in real-time",
+    "tg_bot_name": "Telegram Bot",
+    "wiki": "Everything about the world of Lineage 2 Essence",
+    "wiki_name": "Knowledge Base"
+  },
+
+  "eventCalendar": {
+    "title": "Event Calendar",
+    "description": "Here you will find information about events and other activities in your favorite game.",
+    "empty": "No events this week. Check what's waiting for you the next week!"
+  }
+}

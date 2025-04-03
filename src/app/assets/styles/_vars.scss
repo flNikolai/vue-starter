@@ -1,0 +1,21 @@
+/**
+ * Colors: Solid
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vwa-font-family-base: 'OpenSans', sans-serif;
+  --vwa-font-family-prime: 'Cinzel', sans-serif;
+  --vwa-font-family-mono: ui-monospace, sfmono-regular, 'SF Mono', menlo, 
+    monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
+  --vwa-c-accent: #20b938;
+  --vwa-c-white: #fff;
+  --vwa-c-black: #000;
+  --vwa-c-bg: #0f1019;
+  --vwa-c-neutral: var(--vwa-c-black);
+  --vwa-c-neutral-inverse: var(--vwa-c-white);
+}
+
+.dark {
+  --vwa-c-neutral: var(--vwa-c-white);
+  --vwa-c-neutral-inverse: var(--vwa-c-black);
+}

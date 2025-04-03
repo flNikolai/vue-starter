@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" width="60" height="60" name="tgbot"
+  fill="currentColor">
+  <g clip-path="url(#tgbot_svg__a)">
+    <path
+      d="M17.591.105c-.519-.218-1.081-.087-1.514.304l-3.721 3.735H6.6L2.88.41A1.396 1.396 0 0 0 1.365.105C.846.322.5.843.5 1.365v11.119C.5 15.524 2.966 18 6.038 18h6.923a5.532 5.532 0 0 0 5.539-5.56V1.32c-.043-.477-.39-.998-.909-1.215ZM7.423 11.094H3.27v-2.78h4.154v2.78Zm8.264 0h-4.153v-2.78h4.153v2.78Z"></path>
+  </g>
+  <defs>
+    <clipPath id="tgbot_svg__a">
+      <path d="M.5 0h18v18H.5z"></path>
+    </clipPath>
+  </defs>
+</svg>
