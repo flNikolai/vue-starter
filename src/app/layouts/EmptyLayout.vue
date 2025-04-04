@@ -1,5 +1,5 @@
 <template>
   <main class="app__content">
-    <router-view />
+    <slot />
   </main>
 </template>

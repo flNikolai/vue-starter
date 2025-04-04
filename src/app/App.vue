@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { MainLayout } from '@/shared/ui/layouts'
+import { useRoute } from 'vue-router'
+import { BaseFooter, BaseHeader, MainLayout } from '../app/layouts'
 
 const route = useRoute()
-
 const layout = computed(() => route.meta.layout || MainLayout)
 </script>
 
@@ -10,15 +10,22 @@ const layout = computed(() => route.meta.layout || MainLayout)
   <div class="app">
     <component :is="layout">
       <template #header>
-        Header
+        <BaseHeader />
       </template>
 
       <template #default>
-        <router-view />
+        <router-view v-slot="{ Component }">
+          <transition
+            name="fade"
+            mode="out-in"
+          >
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </template>
 
       <template #footer>
-        Footer
+        <BaseFooter />
       </template>
     </component>
   </div>

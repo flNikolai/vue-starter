@@ -1,4 +1,4 @@
-import { MainLayout } from '@/shared/ui/layouts'
+import { MainLayout } from '../../../app/layouts'
 
 export const routes = [
   {
